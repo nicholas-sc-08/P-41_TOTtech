@@ -1,10 +1,4 @@
-export const logos = [
-    { src: "/bumnLogo.png", alt: "Bumn" },
-    { src: "/citylinkLogo.svg", alt: "Citylink" },
-    { src: "/spotifyLogo.svg", alt: "Spotify" },
-    { src: "/valeLogo.png", alt: "Vale" },
-    { src: "/forbesLogo.svg", alt: "Forbes" },
-];
+export const logos = [{ src: "/bumnLogo.png", alt: "Bumn" }, { src: "/citylinkLogo.svg", alt: "Citylink" }, { src: "/spotifyLogo.svg", alt: "Spotify" }, { src: "/valeLogo.png", alt: "Vale" }, { src: "/forbesLogo.svg", alt: "Forbes" }];
 
 export const containerVariants = {
     hidden: { opacity: 0 },
