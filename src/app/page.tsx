@@ -4,6 +4,7 @@
   import NossosClientes from "../components/NossosClientes";
 import Proposito from "../components/Proposito";
 import AgendarDemonstracao from "../components/AgendarDemonstracao";
+import Footer from "@/components/Footer";
 
   export default function Home() {
     return (
@@ -13,6 +14,7 @@ import AgendarDemonstracao from "../components/AgendarDemonstracao";
         <NossosClientes key={"nossosClientes"}/>
         <Proposito key={"proposito"}/>
         <AgendarDemonstracao key={"agendarDemonstracao"}/>
+        <Footer key={"footer"}/>
       </AnimatePresence>
     );
   }
