@@ -1,8 +1,9 @@
   import { AnimatePresence } from "framer-motion";
-  import Header from "./components/Header";
-  import Banner from "./components/Banner";
-  import NossosClientes from "./components/NossosClientes";
-import Proposito from "./components/Proposito";
+  import Header from "../components/Header";
+  import Banner from "../components/Banner";
+  import NossosClientes from "../components/NossosClientes";
+import Proposito from "../components/Proposito";
+import AgendarDemonstracao from "../components/AgendarDemonstracao";
 
   export default function Home() {
     return (
@@ -11,6 +12,7 @@ import Proposito from "./components/Proposito";
         <Banner key={"banner"}/>
         <NossosClientes key={"nossosClientes"}/>
         <Proposito key={"proposito"}/>
+        <AgendarDemonstracao key={"agendarDemonstracao"}/>
       </AnimatePresence>
     );
   }
