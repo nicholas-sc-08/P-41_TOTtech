@@ -17,7 +17,7 @@ export default function AgendarDemonstracao() {
                         </div>
                     </motion.div>
                 </motion.div>
-                <motion.div className="flex w-full md:flex justify-center md:w-1/2">
+                <motion.div className="flex w-full md:flex justify-center md:justify-start md:w-1/2">
                     <CardDemonstracao />
                 </motion.div>
             </motion.div>
