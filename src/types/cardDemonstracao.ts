@@ -5,7 +5,7 @@ export const containerVariants = {
         y: 0,
         transition: {
             duration: 0.6,
-            ease: "easeOut",
+            ease: "easeOut" as const,
             when: "beforeChildren",
             staggerChildren: 0.1
         },
