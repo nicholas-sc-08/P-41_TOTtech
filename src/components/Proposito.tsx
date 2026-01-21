@@ -13,8 +13,8 @@ export default function Proposito() {
                 </motion.div>
                 <motion.div className="flex justify-evenly w-full">
                     {propositoImages.map(card => (
-                        <motion.div key={card} variants={cardVariants} whileTap={{ scale: 0.98, y: 0 }} whileHover={{ scale: 1.03, y: -10, transition: { duration: 0.3 } }} className="relative cursor-pointer w-90">
-                            <img src={card} alt="proposito" className="w-full h-full object-cover overflow-hidden rounded-2xl shadow-2xl" />
+                        <motion.div key={card} variants={cardVariants} whileTap={{ scale: 0.98, y: 0 }} whileHover={{ scale: 1.00, y: -10, transition: { duration: 0.3 } }} className="relative cursor-pointer w-90">
+                            <img src={card} alt="proposito" className="w-100 h-full object-cover overflow-hidden rounded-2xl shadow-2xl" />
                         </motion.div>
                     ))}
                 </motion.div>
