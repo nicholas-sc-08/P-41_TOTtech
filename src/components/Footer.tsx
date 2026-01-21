@@ -9,7 +9,7 @@ import { Instagram, Linkedin, Phone } from "lucide-react";
 export default function Footer() {
     return (
         <AnimatePresence>
-            <motion.footer className="bg-footer w-full py-12" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.1 }}>
+            <motion.footer className="bg-footer w-full mt-20 pt-20" variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.1 }}>
                 <motion.main className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between px-6 gap-10">
                     <motion.div variants={itemVariants} className="flex flex-col items-center md:items-start space-y-4">
                         <motion.img src="/TOTlogoWhite.svg" alt="logo" className="w-35" />

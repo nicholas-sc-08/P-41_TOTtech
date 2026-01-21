@@ -44,9 +44,7 @@ export default function Banner() {
         </motion.div>
 
         <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-          <Button variant="secondary" className="w-48 h-10 rounded-full">
-            Agendar demonstração
-          </Button>
+          <Button variant="secondary" className="w-48 h-10 rounded-full">Agendar demonstração</Button>
         </motion.div>
       </motion.section>
     </AnimatePresence>
