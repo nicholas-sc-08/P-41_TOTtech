@@ -12,7 +12,7 @@ export default function CardDemonstracao() {
     return (
         <AnimatePresence>
             <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.3 }}>
-                <Card className="w-100 h-100 flex flex-col justify-between">
+                <Card className="w-100 flex flex-col justify-between">
                     <CardHeader className="h-10">
                         <motion.h3 variants={itemVariants}>
                             <CardTitle>Agende uma demonstração</CardTitle>

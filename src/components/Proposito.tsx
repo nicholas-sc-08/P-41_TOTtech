@@ -6,15 +6,15 @@ import { cardVariants, containerVariants, propositoImages } from "@/types/propos
 export default function Proposito() {
     return (
         <AnimatePresence>
-            <motion.div variants={containerVariants} initial="hidden" whileInView={"visible"} viewport={{ once: true, amount: 0.2 }} className="w-full h-100 bg-primary flex flex-col justify-center items-center">
-                <motion.div variants={cardVariants} className="text-left w-full max-w-7xl mb-12">
-                    <h1 className="text-secondary text-4xl font-bold mb-2">Soluções com propósito</h1>
-                    <p className="text-lg opacity-90">Entender o contexto, personalizar a jornada e caminhar lado a lado.</p>
+            <motion.div variants={containerVariants} initial="hidden" whileInView={"visible"} viewport={{ once: true, amount: 0.1 }} className="w-full py-16 md:py-24 bg-primary flex flex-col justify-center items-center px-6">
+                <motion.div variants={cardVariants} className="text-center md:text-left w-full max-w-7xl mb-12">
+                    <h1 className="text-secondary text-3xl md:text-4xl font-bold mb-4">Soluções com propósito</h1>
+                    <p className="text-base md:text-lg opacity-90 text-white">Entender o contexto, personalizar a jornada e caminhar lado a lado.</p>
                 </motion.div>
-                <motion.div className="flex justify-evenly w-full">
-                    {propositoImages.map(card => (
-                        <motion.div key={card} variants={cardVariants} whileTap={{ scale: 0.98, y: 0 }} whileHover={{ scale: 1.00, y: -10, transition: { duration: 0.3 } }} className="relative cursor-pointer w-90">
-                            <img src={card} alt="proposito" className="w-100 h-full object-cover overflow-hidden rounded-2xl shadow-2xl" />
+                <motion.div className="grid grid-cols-2 md:grid-cols-4 gap-8 w-full max-w-7xl">
+                    {propositoImages.map((card, index) => (
+                        <motion.div key={index} variants={cardVariants} whileTap={{ scale: 0.98 }} whileHover={{ scale: 1.02, y: -10 }} className="relative cursor-pointer w-full">
+                            <img src={card} alt="proposito" className="w-70 md:w-full h-auto object-cover rounded-2xl shadow-2xl" />
                         </motion.div>
                     ))}
                 </motion.div>
