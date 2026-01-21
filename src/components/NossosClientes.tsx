@@ -8,14 +8,8 @@ import { containerVariants, itemVariants, logos } from "@/types/nossosClientes";
 export default function NossosClientes() {
 
     return (
-        <section className="w-full bg-secondary pt-24 flex flex-col items-center justify-center">
-            <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6 }}
-                className="max-w-7xl w-full flex flex-col items-start mb-16 text-left"
-            >
+        <section className="w-full bg-secondary pt-24 pb-24 flex flex-col items-center justify-center">
+            <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }} className="max-w-7xl w-full flex flex-col items-start mb-16 text-left">
                 <h2 className="text-primary text-4xl font-bold">Nossos Clientes</h2>
                 <p className="text-muted-foreground text-lg mt-3">
                     As empresas que geramos as experiências desejadas!
